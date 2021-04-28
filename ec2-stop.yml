@@ -3,7 +3,7 @@
   gather_facts: false
   become: yes
   tasks:
-    - name: Install nginx
+    - name: Install apache
       yum:
-        name: nginx
+        name: httpd
         state: latest
